@@ -1,7 +1,14 @@
-X = 0
+X = -6
 
-the_matrix = [[601, 75, 10, 5], [368, 46, 6, 2], [728, 91, 13, 9], [280, 35, 5, 5]]
-the_order = 4
+the_matrix = [
+    [0, 0, 0, 9, X, 0],
+    [0, 0, 5, 9, X, X],
+    [5, 0, 0, 9, 8, 9],
+    [0, 2, 0, 0, 4, 7],
+    [X, 0, 0, X, 0, X],
+    [0, 4, 5, 8, 5, 8],
+]
+the_order = 6
 iters = 0
 
 
@@ -45,14 +52,14 @@ def drawMatrix(matrix):
 
 def getDeterminant(matrix, order):
     matrix, sign = setTriangleMode(matrix, order)
-    drawMatrix(matrix)
+    # drawMatrix(matrix)
     determinant = 1
 
     for i in range(len(matrix)):
         determinant *= matrix[i][i]
 
-    return (-1) ** sign * determinant
+    return round((-1) ** sign * determinant)
 
 
 print("Определитель равен: ", getDeterminant(the_matrix, the_order))
-print(iters)
+# print(iters)

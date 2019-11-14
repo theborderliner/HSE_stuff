@@ -1,14 +1,33 @@
-from collections import deque
+def mots(etalon, lengthes):
+    l = 0
+    r = len(lengthes) - 1
+    amount = 0
+    while r >= l:
+        curr_len = etalon - lengthes[r]
+        while curr_len >= lengthes[l] and r >= l:
+            curr_len -= lengthes[l]
+            l += 1
+        amount += 1
+        r -= 1
+    return amount
 
-n, k = map(int, input().split())
-input_data = list(map(int, input().split()))
-left = 0
-right = left + k - 1
+amount = 0
 
-for i in range(len(input_data)):
-    my_set = set(input_data[left:right + 1])
-    if len(my_set) < k:
-        left += 1
-        right += 1
-    elif len(my_set) == k:
-        print(left, right)
+def motsR(etalon, lengthes, count = 0):
+    global amount
+    amount += count
+    if len(lengthes) == 0:
+        return 0
+    l = 0
+    r = len(lengthes) - 1
+    rest = etalon - lengthes[0]
+    if rest >= lengthes[r]:
+        motsR(rest, lengthes[:-1])
+    else:
+        return motsR(etalon, lengthes[1:], 1)
+
+
+
+
+# print(mots(9, [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 7]))
+print(motsR(10, [8, 7, 3]))

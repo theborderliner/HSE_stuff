@@ -1,0 +1,193 @@
+\documentclass[a4paper,11pt]{report}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{amsmath} %математические пакеты
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[pdftex,unicode]{hyperref}
+\usepackage[top=2cm,
+left=2cm,
+right=2cm,
+bottom=2cm]{geometry}
+\renewcommand{\familydefault}{\sfdefault}
+
+\title{Коллок по линалу}
+\author{Пешехонов Иван. БПМИ1912}
+\date{\today}
+
+\pdfinfo{%
+  /Title    (Test document)
+  /Author   (Ivan Peshekhonov)
+  /Creator  (Ivan Peshekhonov)
+  /Producer (Ivan Peshekhonov)
+  /Subject  (Test)
+  /Keywords (test)
+}
+
+\DeclareMathOperator{\real}{\rm I\!R}
+\DeclareMathOperator{\Mnm}{\real^{n\times m}}
+\DeclareMathOperator{\Mmn}{\real^{m\times n}}
+\DeclareMathOperator{\Mn}{{\rm I\!R}^{n}}
+
+\begin{document}
+
+\maketitle %создает титульный лист
+\tableofcontents
+\clearpage
+\chapter{Определения}
+\section{Сумма двух матриц, произведение матрицы на скаляр}
+\textbf{Сложение.} $A, B \in \Mnm, A = (a_{ij}), B = (b_{ij}) $
+\[
+A + B = (a_{ij} + b_{ij}) = 
+\begin{pmatrix}
+a_{11} + b_{11} & a_{12} + b_{12} & a_{13} + b_{13} & \cdots & a_{1n} + b_{1n}\\
+a_{21} + b_{21} & a_{22} + b_{22} & a_{23} + b_{23} & \cdots & a_{2n} + b_{2n}\\
+\vdots & \vdots & \vdots & \vdots \\
+a_{m1} + b_{m1} & a_{m2} + b_{m2} & a_{m3} + b_{m3} & \cdots & a_{mn} + b_{mn}\\
+\end{pmatrix}
+\in \Mnm
+\]
+\textbf{Умножение на скаляр.} $A \in \Mnm, \lambda \in \real, A = (a_{ij}) \Rightarrow$
+\[
+\lambda{A} = (\lambda{a_{ij}}) =
+\begin{pmatrix}
+\lambda{a_{11}} & \lambda{a_{12}} & \cdots & \lambda{a_{1n}}\\
+\lambda{a_{21}} & \lambda{a_{22}} & \cdots & \lambda{a_{2n}}\\
+\vdots & \vdots & \vdots & \vdots \\
+\lambda{a_{m1}} & \lambda{a_{m2}} & \cdots & \lambda{a_{mn}}\\
+\end{pmatrix}
+\in \Mnm
+\]
+\section{Транспонированная матрица}
+Пусть $A \in \Mnm, A = (a_{ij})$
+\[
+A =
+\begin{pmatrix}
+a_{11} & a_{12} & \cdots & a_{1n}\\
+a_{21} & a_{22} & \cdots & a_{2n}\\
+\vdots & \vdots & \vdots & \vdots\\
+a_{m1} & a_{m2} & \cdots & a_{mn}\\
+\end{pmatrix}
+\]
+тогда транспонированная к A матрица (обозначается) $A^T$:
+\[
+A^T = 
+\begin{pmatrix}
+a_{11} & a_{21} & \cdots & a_{m1}\\
+a_{12} & a_{22} & \cdots & a_{m2}\\
+\vdots & \vdots & \vdots & \vdots\\
+a_{1n} & a_{2n} & \cdots & a_{mn}\\
+\end{pmatrix}
+\]
+\section{Произведение двух матриц}
+$A \in \Mnm $,
+$B \in \real^{m\times p}$\\
+Тогда AB \textendash такая матрица $C \in \real^{n\times p}$, что $c_{ij} = A_{(i)}B^{(j)} = \sum_{k=1}^{n} a_{ik}b_{kj}$
+\section{Диагональная матрица, умножение на диагональную матрицу слева и справа}
+Матрица $A \in \Mnm$ называется \textbf{диагональной} $\Leftrightarrow$
+\[
+A = 
+\begin{pmatrix}
+a_1 & 0 & 0 & \cdots & 0 & 0\\
+0 & a_2 & 0 & \cdots & 0 & 0\\
+\vdots & \vdots & \ddots & \vdots & \vdots & \vdots\\
+0 & 0 & 0 & a_n & \cdots & 0\\
+\end{pmatrix}
+= diag(a_1, a_2,\cdots, a_n)
+\]
+
+То есть
+\[
+\forall i, j \in \mathbb{N} \Rightarrow a_{ij} = 
+\begin{cases}
+  a_i & i = j\\
+  0 & i \neq j
+\end{cases}
+\] 
+\newline
+\newline
+Пусть A = $diag(a_1, a_2, \cdots, a_n) \in \Mn $, тогда \\
+
+$
+(1) B \in \Mnm \Rightarrow AB = 
+\begin{pmatrix}
+a_1{B_{(1)}}\\
+a_2{B_{(2)}}\\
+\vdots\\
+a_n{B_{(n)}}\\
+\end{pmatrix}
+$ (Каждая строка $B$ умножается на соответсвующий элемент столбца матрицы $A$)
+
+$
+(2) B \in \Mnm \Rightarrow BA = 
+\begin{pmatrix}
+a_1{B^{(1)}} & a_2{B^{(2)}} & \cdots & a_n{B^{(n)}}\\
+\end{pmatrix}
+$ (Каждый сролбец $B$ умножается на соответсвующий элемент строки матрицы $A$)\\
+\section{Единичная матрица, её свойства}
+Матрица $A \in \Mn$ называется \textbf{единичной} $\Leftrightarrow$ $A = diag(1, 1, \cdots, 1) = 
+\begin{pmatrix}
+1 & 0 & \cdots & 0\\
+0 & 1 & \cdots & 0\\
+\vdots & \vdots & \ddots & \vdots\\
+0 & 0 & \cdots & 1\\
+\end{pmatrix}
+$, обозначается $E$ (или $I$).\\
+\\
+\textbf{Свойства:}\\
+(1) $EA = AE = A, \forall A \in \Mn$\\
+(2) $E = E^{-1}$\\
+\section{След квадратной матрицы и его поведение при сложении матриц, умножении матрицы на скаляр и транспонировании}
+\textbf{Следом матрицы} называется сумма элементов её главной диагонали и обозначается $tr(A)$.\\
+\\
+\textbf{Свойства:}\\
+(1) $tr(A + B) = tr(A) + tr(B)$\\
+(2) $tr(\lambda{A}) = \lambda * tr(A)$\\
+(3) $tr(A) = tr(A^T)$\\
+\section{След произведения двух матриц}
+$tr(AB) = tr(BA) \forall A \in \Mnm, B \in \Mmn$\\
+\textbf{Доказательство.}\\
+Пусть $X = AB, Y = BA$, тогда\\
+$tr(X) = \sum_{i=1}^{n} x_{ii} = \sum_{i=1}^{n}\sum_{j=1}^{m} a_{ij}b_{ji} = 
+\sum_{j=1}^{m}\sum_{i=1}^{n} b_{ji}a_{ij} =\sum_{j=1}^{m} y_{jj} = tr(Y) $ $\blacksquare$\\
+\section{Совместные и несовместные системы линейных уравнений}
+Система линейных уравнений (СЛУ):\\
+\[
+\begin{cases}
+  a_{11}x_1 + a_{12}x_2 + \cdots + a_{1n}x_n = b_1\\
+  a_{21}x_1 + a_{22}x_2 + \cdots + a_{2n}x_n = b_2\\
+  \cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\\
+  a_{m1}x_1 + a_{m2}x_2 + \cdots + a_{mn}x_n = b_m\\
+\end{cases}
+\]
+\textbf{Решением СЛУ} является такой набор значений неизвестных, который является решением каждого уравнения в СЛУ.\\
+\\
+CЛУ называется \textbf{совместной} если она имеет хотя бы одно решение. 
+В противном случае СЛУ называется \textbf{несовместной}.\\
+\section{Эквивалентные системы линейных уравнений}
+Две СЛУ от \underline{одних и тех же переменных} называются \textbf{эквивалентыми} если у них совпадают множества решений.
+\section{Расширенная матрица линейных уравнений}
+\[
+(*) = 
+\begin{cases}
+  a_{11}x_1 + a_{12}x_2 + \cdots + a_{1n}x_n = b_1\\
+  a_{21}x_1 + a_{22}x_2 + \cdots + a_{2n}x_n = b_2\\
+  \cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\cdots\\
+  a_{m1}x_1 + a_{m2}x_2 + \cdots + a_{mn}x_n = b_m\\
+\end{cases}
+\]
+\textbf{Расширенной матрицей} СЛУ (\textasteriskcentered) называется матрица вида 
+$\begin{pmatrix}A \textbar b\end{pmatrix} = 
+\begin{pmatrix}
+\begin{tabular}{1111|1}
+a_{11} & a_{12} & \cdots & a_{1n} & b_1\\
+a_{21} & a_{22} & \cdots & a_{2n} & b_2\\
+\vdots & \vdots & \vdots & \vdots & \vdots\\
+a_{m1} & a_{m2} & \cdots & a_{mn} & b_m\\
+\end{tabular}
+\end{pmatrix}$,
+где $A$ \textendash матрица коэффициентов при неизвестных, 
+а $b$ \textendash вектор-слобец правых частей каждого уравнения СЛУ (\textasteriskcentered).
+\end{document}

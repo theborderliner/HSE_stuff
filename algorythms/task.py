@@ -5,20 +5,23 @@ arr2 = list(map(int, input().split()))
 arr3 = list(map(int, input().split()))
 
 
-def QuickSortPos(a, left, right):
-    i = left
-    j = right - 1
-    while True:  # чтобы поставить разделяющий элемент на свое место
-        while a[i] < a[right]:
+def appendAndSort(list1, list2):
+    res = []
+    i, j = 0, 0
+
+    while i < len(list1) and j < len(list2):
+        if list1[i] < list2[j]:
+            res.append(list1[i])
             i += 1
-        while a[j] > a[right] and j > left:
-            j -= 1
-        if i >= j:
-            break
-        a[i], a[j] = a[j], a[i]
-    a[right], a[i] = a[i], a[right]
-    return i
+        else:
+            res.append(list2[j])
+            j += 1
 
-newArr =arr1 + arr2 + arr3
+    res = res + list1[i:] + list2[j:]
+    return res
 
-print(QuickSortPos(newArr, 0, len(newArr)))
+
+arr1 = appendAndSort(arr1, arr2)
+arr2 = appendAndSort(arr1, arr3)
+
+print(*arr2)

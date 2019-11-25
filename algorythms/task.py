@@ -1,27 +1,12 @@
-n, m, k = map(int, input().split())
+import cmath
 
-arr1 = list(map(int, input().split()))
-arr2 = list(map(int, input().split()))
-arr3 = list(map(int, input().split()))
+def shrink_rotate(X, A, coef = 1., alpha = 0.):
+    vector = (A, X)
+    new_vector = (A * coef, X * coef)
+    rotated_vector = (
+            new_vector[0] * cmath.cos(alpha) - new_vector[1] * cmath.sin(alpha),
+            new_vector[0] * cmath.sin(alpha) + new_vector[1] * cmath.cos(alpha),
+    )
+    print(vector, new_vector, rotated_vector)
 
-
-def appendAndSort(list1, list2):
-    res = []
-    i, j = 0, 0
-
-    while i < len(list1) and j < len(list2):
-        if list1[i] < list2[j]:
-            res.append(list1[i])
-            i += 1
-        else:
-            res.append(list2[j])
-            j += 1
-
-    res = res + list1[i:] + list2[j:]
-    return res
-
-
-arr1 = appendAndSort(arr1, arr2)
-arr2 = appendAndSort(arr1, arr3)
-
-print(*arr2)
+shrink_rotate(0 + 1j, 0.5 + 0j, 2., 6.28)

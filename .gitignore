@@ -1,5 +1,5 @@
 .idea
-.idea/*
+.idea/workspace.xml
 venv
 TeX/hw*
 TeX/*.tex.backup

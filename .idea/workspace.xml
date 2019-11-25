@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="038b1217-d684-4ea2-9cc8-6cb148c9b35b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sem_linal/find_det_pro.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sem_linal/functions_tests.ipynb" afterDir="false" />
+    <list default="true" id="038b1217-d684-4ea2-9cc8-6cb148c9b35b" name="Default Changelist" comment="Initial commit">
+      <change beforePath="$PROJECT_DIR$/.idea/hse.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/hse.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorythms/homework4.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorythms/homework4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sem_linal/find_det_pro.py" beforeDir="false" afterPath="$PROJECT_DIR$/sem_linal/find_det_pro.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,19 +17,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sem_linal/find_det.py">
+        <entry file="file://$PROJECT_DIR$/algorythms/task.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="61" lean-forward="true" selection-start-line="10" selection-end-line="61" />
+            <state relative-caret-position="304">
+              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/algorythms/homework3.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sem_linal/find_det_pro.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
+            <state relative-caret-position="304">
+              <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -36,10 +47,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sem_linal/matrixes.txt">
+        <entry file="file://$PROJECT_DIR$/algorythms/sem4.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" selection-start-line="1" selection-end-line="3" selection-end-column="13" />
+            <state>
+              <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/algorythms/homework4.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="34" column="82" selection-start-line="34" selection-start-column="79" selection-end-line="34" selection-end-column="82" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -85,23 +114,24 @@
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/generator.py" />
         <option value="$PROJECT_DIR$/find_det.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/sem_linal/generator.py" />
         <option value="$PROJECT_DIR$/other_shit/file.txt" />
         <option value="$PROJECT_DIR$/other_shit/task.py" />
         <option value="$PROJECT_DIR$/sem_linal/find_det.py" />
         <option value="$PROJECT_DIR$/algorythms/task.py" />
-        <option value="$PROJECT_DIR$/algorythms/sem4.py" />
-        <option value="$PROJECT_DIR$/TeX/colloc.tex" />
+        <option value="$PROJECT_DIR$/algorythms/homework3.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/sem_linal/find_det_pro.py" />
+        <option value="$PROJECT_DIR$/algorythms/sem4.py" />
+        <option value="$PROJECT_DIR$/algorythms/homework4.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="273" />
+    <option name="x" value="2238" />
     <option name="y" value="-4" />
-    <option name="width" value="1392" />
-    <option name="height" value="1010" />
+    <option name="width" value="1853" />
+    <option name="height" value="1082" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -113,28 +143,29 @@
         <subPane>
           <expand>
             <path>
-              <item name="hse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hse" type="462c0819:PsiDirectoryNode" />
+              <item name="HSE_stuff" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HSE_stuff" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hse" type="462c0819:PsiDirectoryNode" />
+              <item name="HSE_stuff" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HSE_stuff" type="462c0819:PsiDirectoryNode" />
               <item name="algorythms" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hse" type="462c0819:PsiDirectoryNode" />
-              <item name="other_shit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hse" type="462c0819:PsiDirectoryNode" />
+              <item name="HSE_stuff" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HSE_stuff" type="462c0819:PsiDirectoryNode" />
               <item name="sem_linal" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hse" type="462c0819:PsiDirectoryNode" />
+              <item name="HSE_stuff" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HSE_stuff" type="462c0819:PsiDirectoryNode" />
               <item name="TeX" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HSE_stuff" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HSE_stuff" type="462c0819:PsiDirectoryNode" />
+              <item name="TeX" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -146,7 +177,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/sem_linal" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/TeX/source" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -158,10 +189,9 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/TeX" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/TeX/compiled" />
+      <recent name="$PROJECT_DIR$/TeX/source" />
       <recent name="$PROJECT_DIR$/sem_linal" />
     </key>
   </component>
@@ -177,7 +207,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.find_det_pro">
+  <component name="RunManager" selected="Python.homework4">
     <configuration name="find_det_pro" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="hse" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -192,6 +222,50 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sem_linal/find_det_pro.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="homework3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="hse" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorythms" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorythms/homework3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="homework4" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="hse" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorythms" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorythms/homework4.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -246,8 +320,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.find_det_pro" />
+        <item itemvalue="Python.homework4" />
         <item itemvalue="Python.sem4" />
+        <item itemvalue="Python.find_det_pro" />
+        <item itemvalue="Python.homework3" />
         <item itemvalue="Python.task" />
       </list>
     </recent_temporary>
@@ -291,13 +367,12 @@
       <workItem from="1573705966380" duration="766000" />
       <workItem from="1573722343514" duration="1997000" />
       <workItem from="1574077220612" duration="28000" />
-      <workItem from="1574104198672" duration="310000" />
-      <workItem from="1574230161837" duration="6537000" />
-      <workItem from="1574368875340" duration="751000" />
-      <workItem from="1574494149279" duration="744000" />
-      <workItem from="1574511428698" duration="4849000" />
-      <workItem from="1574517166633" duration="243000" />
-      <workItem from="1574518210471" duration="15150000" />
+      <workItem from="1574190180405" duration="2814000" />
+      <workItem from="1574368723329" duration="244000" />
+      <workItem from="1574432026688" duration="12504000" />
+      <workItem from="1574494070605" duration="46000" />
+      <workItem from="1574494130650" duration="1700000" />
+      <workItem from="1574594884216" duration="13850000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1573054927209</created>
@@ -313,43 +388,50 @@
       <option name="project" value="LOCAL" />
       <updated>1573722505602</updated>
     </task>
-    <task id="LOCAL-00003" summary="Update tex">
-      <created>1574104237162</created>
+    <task id="LOCAL-00003" summary="Add sem4">
+      <created>1574192167549</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1574104237162</updated>
+      <updated>1574192167549</updated>
     </task>
-    <task id="LOCAL-00004" summary="Add more definitions to tex">
-      <created>1574368903354</created>
+    <task id="LOCAL-00004" summary="Update settings">
+      <created>1574494618957</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1574368903354</updated>
+      <updated>1574494618957</updated>
     </task>
-    <task id="LOCAL-00005" summary="update tex">
-      <created>1574494271885</created>
+    <task id="LOCAL-00005" summary="update structure">
+      <created>1574495043570</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1574494271885</updated>
+      <updated>1574495043570</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add algo homework 4">
+      <created>1574610603381</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1574610603381</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="200399000" />
+    <option name="totallyTimeSpent" value="202973000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="80" y="-4" width="1841" height="1085" extended-state="6" />
+    <frame x="1920" y="-4" width="1920" height="1084" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3781372" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15741728" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49972114" weight="0.32925585" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.491913" visible="true" weight="0.37410805" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49470162" weight="0.39959225" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.491913" visible="true" weight="0.41896024" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49470162" weight="0.24974516" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -358,7 +440,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.508087" side_tool="true" weight="0.37410805" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32925585" />
-      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49972114" weight="0.27930683" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49972114" weight="0.32925585" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -367,31 +449,6 @@
       <window_info anchor="right" id="R Packages" order="5" />
       <window_info anchor="right" id="Database" order="6" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3692136" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49972114" weight="0.32925585" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.491913" visible="true" weight="0.37410805" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49470162" weight="0.39959225" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.508087" side_tool="true" weight="0.37410805" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32960325" />
-      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49972114" weight="0.32960325" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="R Graphics" order="4" />
-      <window_info anchor="right" id="R Packages" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -399,10 +456,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Fix det" />
-    <MESSAGE value="Update tex" />
-    <MESSAGE value="Add more definitions to tex" />
-    <MESSAGE value="update tex" />
-    <option name="LAST_COMMIT_MESSAGE" value="update tex" />
+    <MESSAGE value="Add sem4" />
+    <MESSAGE value="Update settings" />
+    <MESSAGE value="update structure" />
+    <MESSAGE value="Add algo homework 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add algo homework 4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -434,30 +492,32 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/algorythms/sem4.py</url>
-          <line>31</line>
-          <option name="timeStamp" value="49" />
+          <line>2</line>
+          <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/algorythms/sem4.py</url>
-          <line>11</line>
-          <option name="timeStamp" value="50" />
+          <url>file://$PROJECT_DIR$/algorythms/homework3.py</url>
+          <line>3</line>
+          <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/sem_linal/find_det_pro.py</url>
-          <line>7</line>
-          <option name="timeStamp" value="56" />
+          <url>file://$PROJECT_DIR$/algorythms/homework4.py</url>
+          <line>32</line>
+          <option name="timeStamp" value="62" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/hse$w.coverage" NAME="w Coverage Results" MODIFIED="1571494752793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/hse$generator.coverage" NAME="generator Coverage Results" MODIFIED="1572972816913" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/hse$task__1_.coverage" NAME="task (1) Coverage Results" MODIFIED="1573706693780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorythms" />
+    <SUITE FILE_PATH="coverage/hse$generator.coverage" NAME="generator Coverage Results" MODIFIED="1572972816913" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HSE_stuff$homework4.coverage" NAME="homework4 Coverage Results" MODIFIED="1574623386312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorythms" />
     <SUITE FILE_PATH="coverage/hse$main.coverage" NAME="main Coverage Results" MODIFIED="1573722476746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/hse$task.coverage" NAME="task Coverage Results" MODIFIED="1573731361431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorythms" />
-    <SUITE FILE_PATH="coverage/hse$find_det_pro.coverage" NAME="find_det_pro Coverage Results" MODIFIED="1574545042727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sem_linal" />
-    <SUITE FILE_PATH="coverage/hse$sem4.coverage" NAME="sem4 Coverage Results" MODIFIED="1574235152870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorythms" />
+    <SUITE FILE_PATH="coverage/HSE_stuff$sem4.coverage" NAME="sem4 Coverage Results" MODIFIED="1574603972662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorythms" />
+    <SUITE FILE_PATH="coverage/HSE_stuff$homework3.coverage" NAME="homework3 Coverage Results" MODIFIED="1574455034073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorythms" />
+    <SUITE FILE_PATH="coverage/hse$w.coverage" NAME="w Coverage Results" MODIFIED="1571494752793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HSE_stuff$find_det_pro.coverage" NAME="find_det_pro Coverage Results" MODIFIED="1574603959783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sem_linal" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
@@ -467,16 +527,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///usr/lib/python3.6/codecs.py" />
     <entry file="file://$PROJECT_DIR$/w.py" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="476">
+          <caret line="1757" selection-start-line="1757" selection-end-line="1757" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/other_shit/file.txt">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sem_linal/matrixes.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sem_linal/generator.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -492,91 +560,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+    <entry file="file://$PROJECT_DIR$/sem_linal/find_det.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="1751" selection-start-line="1751" selection-end-line="1751" />
+        <state relative-caret-position="323">
+          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/lib/python3.6/codecs.py">
+    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/-1247971764/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="323" selection-start-line="323" selection-end-line="323" />
+        <state relative-caret-position="186">
+          <caret line="4124" column="8" selection-start-line="4124" selection-start-column="8" selection-end-line="4124" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/algorythms/task.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="304">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TeX/colloc.tex">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4370">
-          <caret line="230" column="13" selection-start-line="230" selection-start-column="13" selection-end-line="230" selection-end-column="13" />
-          <folding>
-            <element signature="e#7701#7707#3" expanded="true" />
-            <element signature="e#7743#7749#3" expanded="true" />
-            <element signature="e#7781#7787#3" expanded="true" />
-            <element signature="e#7889#7895#3" expanded="true" />
-            <element signature="e#7931#7937#3" expanded="true" />
-            <element signature="e#7969#7975#3" expanded="true" />
-          </folding>
+        <state relative-caret-position="38">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TeX/hw9.tex">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TeX/векторные пространства.tex">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TeX/mathan-cons.tex">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorythms/sem4.py">
+    <entry file="file://$PROJECT_DIR$/algorythms/homework3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="247">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sem_linal/find_det.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="61" lean-forward="true" selection-start-line="10" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sem_linal/matrixes.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/numpy/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/other_shit/Untitled.ipynb">
-      <provider selected="true" editor-type-id="jupyter-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sem_linal/functions_tests.ipynb">
-      <provider selected="true" editor-type-id="jupyter-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sem_linal/Untitled.ipynb">
-      <provider selected="true" editor-type-id="jupyter-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/sem_linal/find_det_pro.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
+        <state relative-caret-position="304">
+          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorythms/sem4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorythms/homework4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="34" column="82" selection-start-line="34" selection-start-column="79" selection-end-line="34" selection-end-column="82" />
         </state>
       </provider>
     </entry>

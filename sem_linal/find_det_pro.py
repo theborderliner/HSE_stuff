@@ -1,6 +1,6 @@
 import numpy as np
 import scipy.linalg as sla
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 
 def my_det(X):
@@ -18,7 +18,7 @@ def my_det(X):
         id_max = vector.argmax(axis=0)
         if id_max != 0:
             save = X[0].copy()
-            X[0] = X[id_max];
+            X[0] = X[id_max]
             X[id_max] = save
             swap -= 1
         for i in range(1, X.shape[0]):
@@ -27,9 +27,15 @@ def my_det(X):
         return (-1) ** swap * X[0, 0] * \
                my_det(X[np.ix_(range(1, X.shape[0]), range(1, X.shape[1]))])
 
+def my_paskal(dim):
+    P = np.ones((dim, dim))
+    for i in range(1, dim):
+        for j in range(1, dim):
+            P[i, j] = P[i - 1, j] + P[i, j - 1]
+    return P
 
-# print(X)
-# print(my_det(X), sla.det(X))
+print(my_det(my_paskal(30)))
+
 
 def f(A, B, k):
     up_border = min(A.shape[0], k)
@@ -43,17 +49,3 @@ def f(A, B, k):
     print(np.multiply(A, B))
 
 
-mat = np.array([[1, 2, 3],
-                [4, 5, 6],
-                [7, 8, 9]
-                ])
-v = np.array([2, 4, 6])
-# print(mat * v.T)
-
-print(f(np.array([[1, 2, 3],
-                [4, 5, 6],
-                [7, 8, 9]
-                ]), np.array([[5, 2, 1],
-                              [6, 5, 5],
-                              [3, 1, 1]
-                              ]), 2))

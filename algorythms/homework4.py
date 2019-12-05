@@ -7,6 +7,7 @@ def task_A():
 
     for i in n:
         possible = []
+        vals[i - 1] = i - 2
         for action in actions:
             if action == 1:
                 possible.append(i - 1)
@@ -19,26 +20,55 @@ def task_A():
             dp.append(current_action[0] + 1)
         else:
             dp.append(min(current_action) + 1)
-        vals[dp[i]] = i  # FIXME set answer restoration
+        # vals[dp[i]] = i  # FIXME set answer restoration
+
+    n = len(vals)
+    ans = [n]
+    while n != 1:
+        if dp[n - 1] + 1 == dp[n]:
+            ans.append(n - 1)
+            n -= 1
+        if n % 2 == 0 and \
+                dp[n // 2] + 1 == dp[n]:
+            ans.append(n // 2)
+            n //= 2
+        if n % 3 == 0 and \
+                dp[n // 3] + 1 == dp[n]:
+            ans.append(n // 3)
+            n //= 3
+
     print(dp[-1])
-    print(*vals[:dp[-1] + 1])
+    print(*ans[::-1])
 
 
 def task_B():
     n, m = map(int, input().split())
-    path = list(map(int, input().split()))
-    dp = [1]
-    s = 0
+    path = [int(i) for i in input().split()]
+    ways = [1]
+    ls = 0
 
     for i in range(1, n):
         if path[i] == 1:
-            dp.append((dp[-1] - dp[-(m + 1)] + dp[-1] if len(dp) >= m + 1 else 2 * dp[-1]))
-        else:
-            # s = s - dp[-(m + 1)] + dp[-1] if len(dp) >= m + 1 else s + dp[-1]
-            dp.append(0)
+            if len(ways) >= m + 1:
+                ls = ls - ways[-(m + 1)] + ways[-1] % 1000000007
+            if len(ways) < m + 1:
+                ls = ls + ways[-1] % 1000000007
+            ways.append(ls)
+        if path[i] != 1:
+            if len(ways) >= m + 1:
+                ls = ls - ways[-(m + 1)] + ways[-1] % 1000000007
+            if len(ways) < m + 1:
+                ls = ls + ways[-1] % 1000000007
+            ways.append(0)
 
-    print(dp[-1] % 1000000007)
+    print(ways[-1] % 1000000007)
 
 
 # task_A()
-task_B()
+# task_B()
+
+
+# arrr()
+
+for i in enumerate([1, 2, 3], 4):
+    print(i)

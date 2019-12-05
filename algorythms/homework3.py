@@ -1,3 +1,5 @@
+import matplotlib
+
 def str123():  # я теперь буду извращаться, чтобы такое точно ни с кем не совпало
     zero, one, two = map(int, input().split())
 

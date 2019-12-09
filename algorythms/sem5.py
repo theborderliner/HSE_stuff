@@ -1,3 +1,6 @@
+import random
+
+
 def first_task(k, vals):
     A, dp, prev = range(1, len(vals)), [0], []
 
@@ -27,3 +30,11 @@ def solve(t, k):
     while n != 0:
         n = prev[n]
         print(n + 1)
+
+
+
+def colloc():
+    for i in range(0, 5):
+        print(random.randint(1, 73))
+
+colloc()

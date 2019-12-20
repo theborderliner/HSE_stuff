@@ -1,0 +1,81 @@
+\documentclass[a4paper, 12pt]{report}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{amsmath} %математические пакеты
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[pdftex,unicode]{hyperref}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{graphicx}
+
+\usepackage[top=2cm,
+left=2cm,
+right=2cm,
+bottom=2cm]{geometry}
+
+\title{Большое домашнее задание № 3. Математический анализ.}
+\author{Пешехонов Иван. БПМИ1912}
+\date{\today}
+
+\begin{document}
+\maketitle
+\clearpage
+\chapter{Вариант 19.}
+\section{№ 1.}
+Найти предел по правилу Лопиталя:\\
+\\
+a) $\lim\limits_{x\to{0}} \frac{(x + 1)\sin^2{x}}{(x + a)\ln^2{(x + 1)}} = 
+\lim\limits_{x\to{0}} \frac{((x + 1)\sin^2{x})'}{((x + a)\ln^2{(x + 1)})'} =
+\lim\limits_{x\to{0}} \frac{\sin^2{x} + 2(x + 1)\sin{x}\cos{x}}{\ln^2(x + 1) + 2(x + a)\frac{\ln(x + 1)}{x + 1}} =
+\lim\limits_{x\to{0}} \frac{\sin^2{x} + (x + 1)\sin{2x}}{\frac{(x+1)\ln^2(x + 1) + 2(x + a)\ln(x + 1)}{x + 1}} =\\
+=\lim\limits_{x\to{0}} \frac{(x + 1)(\sin^2{x} + (x + 1)\sin{2x})}{(x+1)\ln^2(x + 1) + 2(x + a)\ln(x + 1)} =
+\lim\limits_{x\to{0}} \frac{((x + 1)(\sin^2{x} + (x + 1)\sin{2x}))'}{((x+1)\ln^2(x + 1) + 2(x + a)\ln(x + 1))'} =\\
+= \lim\limits_{x\to{0}} \frac{\sin^2{x} + (x + 1)\sin{2x} + (x + 1)(\sin{2x} + \sin{2x} + 2(x + 1)\cos{2x})}
+{\ln^2(x + 1) + 2(x + 1)\frac{\ln{(x + 1)}}{x + 1} + 2(\ln{(x + 1)} + \frac{(x + a)}{x + 1})} =
+\lim\limits_{x\to{0}} \frac{\sin^2{x} + (x + 1)\sin{2x} + 2(x + 1)(\sin{2x}+ (x + 1)\cos{2x})}
+{\ln^2(x + 1) + 2\ln{(x + 1)} + 2(\ln{(x + 1)} + \frac{(x + a)}{x + 1})} =\\
+= \lim\limits_{x\to{0}} \frac{0 + 0 + 2(0 + 1)}
+{0 + 0 + 2(0 + a)} = \frac{1}{a}$\\\\
+б) $\lim\limits_{x \to 0}\left(\frac{1}{1 - \cos{x}} - \frac{1}{e^x - e^{-x}}\right) = 
+\lim\limits_{x \to 0}\left(\frac{1}{1 - \cos{x}}\right) - \lim\limits_{x \to 0}\left(\frac{1}{e^x - e^{-x}}\right) = 
+\lim\limits_{x \to 0}\left(\frac{(1)'}{(1 - \cos{x})'}\right) - \lim\limits_{x \to 0}\left(\frac{(1)'}{(e^x - e^{-x})'}\right) =\\\\
+= \lim\limits_{x \to 0}\left(\frac{0}{\sin{x}}\right) - \lim\limits_{x \to 0}\left(\frac{0}{e^x + e^{-x}}\right) =
+= \lim\limits_{x \to 0}\left(\frac{(0)'}{(\sin{x})'}\right) - \lim\limits_{x \to 0}\left(\frac{0}{1 + 1}\right) =
+\lim\limits_{x \to 0}\left(\frac{0}{\cos{x}}\right) - \lim\limits_{x \to 0}0 =
+\lim\limits_{x \to 0}0 - \lim\limits_{x \to 0}0 =\\\\
+= 0 - 0 = 0
+$\\\\
+в) $\lim\limits_{x \to +\infty}\left(\frac{\ln{x}}{x}\right)^\frac{\cos{x}}{x} = 
+\lim\limits_{x \to +\infty}e^{\ln{\left(\frac{\ln{x}}{x}\right)^\frac{\cos{x}}{x}}} =
+e^{\lim\limits_{x \to +\infty}\frac{\cos{x}}{x}\ln{\left(\frac{\ln{x}}{x}\right)}}= 
+e^{\lim\limits_{x \to +\infty}\frac{\cos{x}\ln{\left(\frac{\ln{x}}{x}\right)}}{x}}= 
+e^{\lim\limits_{x \to +\infty}\frac{(\cos{x}\ln{\left(\frac{\ln{x}}{x}\right))'}}{(x)'}} =\\
+e^{\lim\limits_{x \to +\infty}(-\sin{x}\ln{\left(\frac{\ln{x}}{x}\right) + \frac{\cos{x}}{\frac{\ln{x}}{x}} \cdot \frac{1 - ln(x)}{x^2})}} =
+e^{\lim\limits_{x \to +\infty}(-\sin{x}\ln{\left(\frac{\ln{x}}{x}\right) + \frac{\cos{x}}{\ln{x}} \cdot \frac{1 - ln(x)}{x})}} =$
+\section{№ 2.}
+$f(x) = (1 - x^2)e^{x-1}, x_0 = 1;$\\
+\\
+$f'(x) = (1 - x^2)'e^{x - 1} + (1 - x^2)[e^{x - 1}]' = -2xe^{x - 1} + (1 - x^2)e^{x - 1} = (1 - 2x - x^2)e^{x - 1}$\\
+$f''(x) = [1 - 2x - x^2]'e^{x - 1} + (1 - 2x - x^2)[e^{x - 1}]' = (-2 - 2x)e^{x - 1} + (1 - 2x - x^2)e^{x - 1} =\\
+= (-1 - 4x - x^2)e^{x - 1}$\\
+$f'''(x) = [-1 - 4x - x^2]'e^{x - 1} + (-1 - 4x - x^2)[e^{x - 1}]' = (-4 - 2x)e^{x - 1} + (-1 - 4x - x^2)e^{x - 1} =\\
+= (-5 - 6x - x^2)e^{x - 1}$\\
+$f(x_0) =  0$\\
+\\
+Формула Тейлора:\\
+$f(x) = f(x_0) + \sum\limits_{k = 1}^n{\frac{f^{(k)}(x_0)}{k!}(x - x_0)^k} + \overline{\overline{o}}((x - x_0)^3)$\\
+\\
+$f(x) = 0 + f'(x_0)(x - x_0) + \frac{f''(x_0)}{2}(x - x_0)^2 + \frac{f'''(x_0)}{6}(x - x_0)^3 + \overline{\overline{o}}((x - x_0)^3) =\\
+= -2(x - x_0) + \frac{-6}{2}(x - x_0)^2 + \frac{-12}{6}(x - x_0)^3 + \overline{\overline{o}}((x - x_0)^3) = \\
+= -2(x - x_0) - 3(x - x_0)^2 - 2(x - x_0)^3 + \overline{\overline{o}}((x - x_0)^3)$
+\section{№ 5.}
+Исследовать ф-цию с помощью производной первого порядка.\\
+\\
+$y = \frac{1}{e^x - 1}$\\
+$y' = ((e^x - 1)^{-1})' = -e^x(e^x - 1)^{-2} = -\frac{e^x}{(e^x - 1)^2}$\\
+Очевидно, что за исключением точки $0$ функция $y(x)$ везде непрерывна. А что происходит в точке $0$ - вот это мы сейчас узнаем.
+
+\includegraphics[scale=0.3]{plot3.png}
+\end{document}

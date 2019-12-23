@@ -42,7 +42,7 @@ a) $\lim\limits_{x\to{0}} \frac{(x + 1)\sin^2{x}}{(x + a)\ln^2{(x + 1)}} =
 \lim\limits_{x \to 0}\left(\frac{1}{1 - \cos{x}}\right) - \lim\limits_{x \to 0}\left(\frac{1}{e^x - e^{-x}}\right) = 
 \lim\limits_{x \to 0}\left(\frac{(1)'}{(1 - \cos{x})'}\right) - \lim\limits_{x \to 0}\left(\frac{(1)'}{(e^x - e^{-x})'}\right) =\\\\
 = \lim\limits_{x \to 0}\left(\frac{0}{\sin{x}}\right) - \lim\limits_{x \to 0}\left(\frac{0}{e^x + e^{-x}}\right) =
-= \lim\limits_{x \to 0}\left(\frac{(0)'}{(\sin{x})'}\right) - \lim\limits_{x \to 0}\left(\frac{0}{1 + 1}\right) =
+\lim\limits_{x \to 0}\left(\frac{(0)'}{(\sin{x})'}\right) - \lim\limits_{x \to 0}\left(\frac{0}{1 + 1}\right) =
 \lim\limits_{x \to 0}\left(\frac{0}{\cos{x}}\right) - \lim\limits_{x \to 0}0 =
 \lim\limits_{x \to 0}0 - \lim\limits_{x \to 0}0 =\\\\
 = 0 - 0 = 0
@@ -50,10 +50,17 @@ $\\\\
 в) $\lim\limits_{x \to +\infty}\left(\frac{\ln{x}}{x}\right)^\frac{\cos{x}}{x} = 
 \lim\limits_{x \to +\infty}e^{\ln{\left(\frac{\ln{x}}{x}\right)^\frac{\cos{x}}{x}}} =
 e^{\lim\limits_{x \to +\infty}\frac{\cos{x}}{x}\ln{\left(\frac{\ln{x}}{x}\right)}}= 
-e^{\lim\limits_{x \to +\infty}\frac{\cos{x}\ln{\left(\frac{\ln{x}}{x}\right)}}{x}}= 
-e^{\lim\limits_{x \to +\infty}\frac{(\cos{x}\ln{\left(\frac{\ln{x}}{x}\right))'}}{(x)'}} =\\
-e^{\lim\limits_{x \to +\infty}(-\sin{x}\ln{\left(\frac{\ln{x}}{x}\right) + \frac{\cos{x}}{\frac{\ln{x}}{x}} \cdot \frac{1 - ln(x)}{x^2})}} =
-e^{\lim\limits_{x \to +\infty}(-\sin{x}\ln{\left(\frac{\ln{x}}{x}\right) + \frac{\cos{x}}{\ln{x}} \cdot \frac{1 - ln(x)}{x})}} =$
+e^{\lim\limits_{x \to +\infty}\frac{\cos{x}}{x}\ \cdot \lim\limits_{x \to +\infty}\ln{\left(\frac{\ln{x}}{x}\right)}} =\\
+= e^{\lim\limits_{x \to +\infty}\frac{\cos{x}}{x}\ \cdot \ln\lim\limits_{x \to +\infty}{\left(\frac{\ln{x}}{x}\right)}} =
+e^{\lim\limits_{x \to +\infty}\frac{\cos{x}}{x}\ \cdot \ln\lim\limits_{x \to +\infty}{\left(\frac{(\ln{x})'}{(x)'}\right)}} =
+e^{\lim\limits_{x \to +\infty}\frac{\cos{x}}{x}\ \cdot \ln\lim\limits_{x \to +\infty}{\left(\frac{1}{x}\right)}} =
+e^{\lim\limits_{x \to +\infty}\frac{\cos{x}}{x}\ \cdot \ln{0}} =\\
+= e^{\lim\limits_{x \to +\infty}\frac{\cos{x}}{x}\ \cdot (-\infty)}$\\
+И вот как бы дальше не понятно. Кажестся, что $\cos{x}$ - ограничена константой, и предел будет $\infty$,
+и соответсвенно буде $\infty \cdot (-\infty)$, что неопределённостью не является.\\
+С другой стороны при некоторых $x$,\ $\cos{x} = 0 $, и тогда получается $0 \cdot (-\infty)$, что
+уже неопределённость.\\
+В общем либо ты понял что я тут написал, и это чего-то стоит, либо давай на защиту...\\
 \section{№ 2.}
 $f(x) = (1 - x^2)e^{x-1}, x_0 = 1;$\\
 \\
@@ -70,12 +77,65 @@ $f(x) = f(x_0) + \sum\limits_{k = 1}^n{\frac{f^{(k)}(x_0)}{k!}(x - x_0)^k} + \ov
 $f(x) = 0 + f'(x_0)(x - x_0) + \frac{f''(x_0)}{2}(x - x_0)^2 + \frac{f'''(x_0)}{6}(x - x_0)^3 + \overline{\overline{o}}((x - x_0)^3) =\\
 = -2(x - x_0) + \frac{-6}{2}(x - x_0)^2 + \frac{-12}{6}(x - x_0)^3 + \overline{\overline{o}}((x - x_0)^3) = \\
 = -2(x - x_0) - 3(x - x_0)^2 - 2(x - x_0)^3 + \overline{\overline{o}}((x - x_0)^3)$
+\section{№ 3.}
+$f(x) = x\arctg{x} - \ln{\sqrt{1 - x^2}}, x_0 = 0;$\\
+\\
+$g(x) = \ln{\sqrt{1 - x^2}} = \ln{[1 + (\sqrt{1 - x^2} - 1)]}$\\
+$h(x) = \arctg{x}$\\
+$f(x) = xh(x) - g(x)$\\
+$\varsigma = (\sqrt{1 - x^2} - 1) \Rightarrow g(x) = \ln(1 + \varsigma)$\\
+$g(x) = \varsigma - \frac{\varsigma^2}{2} + \frac{\varsigma^3}{3} + ... + (-1)^{n - 1}\frac{\varsigma^n}{n}$\\
+$h(x) = x - \frac{x^3}{3} + \frac{x^5}{5} - ... + (-1)^{n - 1}\frac{x^{2n - 1}}{2n - 1}$\\
+$xh(x) = x^2 - \frac{x^4}{3} + \frac{x^6}{5} - ... + (-1)^{n - 1}\frac{x^{2n}}{2n - 1}$\\
+$f(x) = \sum\limits_{k = 1}^n[(-1)^{k - 1}\frac{\varsigma^k}{k} + (-1)^k\frac{x^{2k}}{2k - 1}]$
+\section{№ 4.}
+$\lim\limits_{x \to 0}\frac{x^2e^{x^2} - \sqrt{x - 5x^2}}{\tg(x^3)} = \lim\limits_{x \to 0}\frac{x^2e^{x^2} - \sqrt{x(1 - 5x)}}{\tg(x^3)} = 
+\lim\limits_{x \to 0}\frac{x^2e^{x^2} - \sqrt{x}\sqrt{1 - 5x}}{\tg(x^3)}$\\
+\\
+$f(x) = e^{x^2}$\\
+$g(x) = \sqrt{1 - 5x}$\\
+$h(x) = \tg(x^3)$\\
+\\
+$f(x) = 1 + x^2 + \overline{\overline{o}}(x^3)$\\
+$g(x) = 1 - \frac{5x}{2} + \overline{\overline{o}}(x)$\\
+$h(x) = x^3 + \frac{x^9}{3} + \overline{\overline{o}}(x^{26})$\\
+\\
+Найдём формулу Маклорена для числителя:\\
+$x^2e^{x^2} - \sqrt{x}\sqrt{1 - 5x} = x^2(1 + x^2) - \sqrt{x}(1 - \frac{5x}{2}) = x^2 + x^4 - \sqrt{x} + \frac{5x\sqrt{x}}{2} =\\
+= -\sqrt{x}(1 - x\sqrt{x} - x^3\sqrt{x} - \frac{5x}{2})$
+\\
+\\
+Подставим в дробь:\\
+$\lim\limits_{x \to 0}\frac{-\sqrt{x}(1 - x\sqrt{x} - x^3\sqrt{x} - \frac{5x}{2})}{x^3 + \frac{x^9}{3}} = 
+\lim\limits_{x \to 0}-\frac{\sqrt{x}(1 - x\sqrt{x} - x^3\sqrt{x} - \frac{5x}{2})}{\sqrt{x}({x^2\sqrt{x} + \frac{x^8\sqrt{x}}{3})}} = 
+\lim\limits_{x \to 0}-\frac{(1 - x\sqrt{x} - x^3\sqrt{x} - \frac{5x}{2})}{{x^2\sqrt{x} + \frac{x^8\sqrt{x}}{3}}} = 
+\lim\limits_{x \to 0}-\infty = -\infty$\\
+\\
+Обоснование:\\
+1) $(1 - x\sqrt{x} - x^3\sqrt{x} - \frac{5x}{2}) \to 1$, при $x \to 0$ (очевидно).\\
+2) Знаменатель $\to$ 0.\\
 \section{№ 5.}
 Исследовать ф-цию с помощью производной первого порядка.\\
 \\
 $y = \frac{1}{e^x - 1}$\\
+\textbf{ОДЗ}: $(-\infty; 0)\cup(0; +\infty)$\\
+\textbf{Пересечение с нулями}:\\
+$\frac{1}{e^x - 1} = 0$\\
+$1 = 0\ \Rightarrow $ пересечение с нулями \textbf{отсутвует}.\\
+\textbf{Промежутки знакопостоянтсва}:\\
+При $x < 0 \Rightarrow y < 0$;\\
+При $x > 0 \Rightarrow y > 0$;\\
+\textbf{Производная}:\\
 $y' = ((e^x - 1)^{-1})' = -e^x(e^x - 1)^{-2} = -\frac{e^x}{(e^x - 1)^2}$\\
-Очевидно, что за исключением точки $0$ функция $y(x)$ везде непрерывна. А что происходит в точке $0$ - вот это мы сейчас узнаем.
-
+\textbf{Точки экстремума}:\\
+$-\frac{e^x}{(e^x - 1)^2} = 0$\\
+$-e^x = 0\ \Rightarrow $ экстремумы \textbf{отсутствуют}.
+\[
+\begin{tabular}{| c | c |}
+x < 0 & x > 0\\
+y' < 0 & y' < 0\\
+y(x) - убывает & y(x) - убывает
+\end{tabular}
+\]
 \includegraphics[scale=0.3]{plot3.png}
 \end{document}

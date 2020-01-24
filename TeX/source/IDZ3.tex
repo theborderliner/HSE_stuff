@@ -1,0 +1,693 @@
+\documentclass[a4paper,11pt]{report}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{amsmath} %математические пакеты
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[pdftex,unicode]{hyperref}
+\usepackage[dvipsnames]{xcolor}
+
+\usepackage[top=2cm,
+left=2cm,
+right=2cm,
+bottom=2cm]{geometry}
+
+\title{Индивидуальное домашнее задание № 3.}
+\author{Иван Пешехонов. БПМИ1912.}
+
+\begin{document}
+\maketitle
+\chapter{Вариант 21.}
+\section{№ 1.}
+$
+A = 
+\begin{pmatrix}
+-1 & 1 & -2 & 4 & 6\\
+2 & -5 & 4 & -11 & -12\\
+-2 & -1 & -3 & 3 & 2\\
+2 & 2 & 3 & -2 & -2\\
+-3 & 1 & -5 & 8 & 8\\
+\end{pmatrix}
+$\\
+
+Первое что стоит сделать, это найти $rkA$, этим и займёмся:\\
+\\
+$
+\begin{pmatrix}
+-1 & 1 & -2 & 4 & 6\\
+2 & -5 & 4 & -11 & -12\\
+-2 & -1 & -3 & 3 & 2\\
+2 & 2 & 3 & -2 & -2\\
+-3 & 1 & -5 & 8 & 8\\
+\end{pmatrix}
+\rightsquigarrow
+\begin{pmatrix}
+-1 & 1 & -2 & 4 & 6\\
+0 & -3 & 0 & -3 & 0\\
+0 & -3 & 1 & -5 & -10\\
+0 & 4 & -1 & 6 & 10\\
+0 & -2 & 1 & -4 & -10\
+\end{pmatrix}
+\rightsquigarrow
+\begin{pmatrix}
+-1 & 1 & -2 & 4 & 6\\
+0 & -3 & 0 & -3 & 0\\
+0 & 0 & 1 & -2 & -10\\
+0 & 0 & 1 & -2 & -10\\
+0 & -2 & 1 & -4 & -10\
+\end{pmatrix}
+\rightsquigarrow
+\\\\\\
+\rightsquigarrow
+\begin{pmatrix}
+-1 & 1 & -2 & 4 & 6\\
+0 & 1 & 0 & 1 & 0\\
+0 & 0 & 1 & -2 & -10\\
+0 & 0 & 0 & 0 & 0\\
+0 & -2 & 1 & -4 & -10\
+\end{pmatrix}
+\rightsquigarrow
+\begin{pmatrix}
+-1 & 1 & -2 & 4 & 6\\
+0 & 1 & 0 & 1 & 0\\
+0 & 0 & 1 & -2 & -10\\
+0 & 0 & 0 & 0 & 0\\
+0 & 0 & 1 & -2 & -10\
+\end{pmatrix}
+\rightsquigarrow
+\begin{pmatrix}
+\underline{-1} & 1 & -2 & 4 & 6\\
+0 & \underline{1} & 0 & 1 & 0\\
+0 & 0 & \underline{1} & -2 & -10\\
+0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 &0 & 0\
+\end{pmatrix}
+$\\
+(Впринцыпе, любые элементарные преобразования не меняют ранга матрицы, но мешать виды элементарных
+преобразований в этой задаче это хороший способ выстрелить себе в ногу, поэтому я использовал исключительно
+элементарные преобразования строк.)\\
+Итак, $rkA = 3$. Значит, в результате нужно получить сумму \underline{трёх} матриц ранга $1$.\\
+Полученную матрицу $A'$ можно представить как сумму трёх матриц ранга 1:\\
+\\
+$
+A' = 
+\begin{pmatrix}
+\textcolor{red}{-1} & \textcolor{red}{1} & \textcolor{red}{-2} & \textcolor{red}{4} & \textcolor{red}{6}\\
+\textcolor{Green}{0} & \textcolor{Green}{1} & \textcolor{Green}{0} & \textcolor{Green}{1} & \textcolor{Green}{0}\\
+\textcolor{blue}{0} & \textcolor{blue}{0} & \textcolor{blue}{1} & \textcolor{blue}{-2} & \textcolor{blue}{-10}\\
+0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 &0 & 0\\
+\end{pmatrix}
+= 
+\begin{pmatrix}
+\textcolor{red}{-1} & \textcolor{red}{1} & \textcolor{red}{-2} & \textcolor{red}{4} & \textcolor{red}{6}\\
+0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0\\
+\end{pmatrix}
++
+\begin{pmatrix}
+0 & 0 & 0 & 0 & 0\\
+\textcolor{Green}{0} & \textcolor{Green}{1} & \textcolor{Green}{0} & \textcolor{Green}{1} & \textcolor{Green}{0}\\
+0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0\\
+\end{pmatrix}
++
+\begin{pmatrix}
+0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0\\
+\textcolor{blue}{0} & \textcolor{blue}{0} & \textcolor{blue}{1} & \textcolor{blue}{-2} & \textcolor{blue}{-10}\\
+0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0\\
+\end{pmatrix}
+$\\
+\\
+Матрица $A'$ получена из матрицы $A$ путём цепочки элементарных преобразований строк $\Rightarrow$ матрица $A$ получается
+из матрицы $A'$ путём цепочки обратных элементарных преобразований.\\
+Т.к. матрица $A'$ представима в виде суммы трёх матриц ранга 1, то если применить к каждой из таких матриц цепочку обратных элементарных преобразований, получится искомоеразложение матрицы $A$.\\
+Введём обозначение:\\
+$A' = \textcolor{red}{A^{\sharp}} + \textcolor{Green}{A^{\flat}} + \textcolor{blue}{A^{\natural}}$\\
+Теперь выполняем для каждой матрицы ранга 1 цепочку обратных элементарных преобразований:\\
+$A^{\sharp} = 
+\begin{pmatrix}
+-1 & 1 & -2 & 4 & 6\\
+0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0\\
+\end{pmatrix}
+$\\
+\section{№ 3.}
+$U$ - подпространство в $\mathbb{R}^4$, такое что 
+\[
+\langle
+\begin{pmatrix}
+4\\
+1\\
+-9\\
+-17\\
+\end{pmatrix},
+\begin{pmatrix}
+3\\
+-1\\
+-5\\
+-4\\
+\end{pmatrix},
+\begin{pmatrix}
+7\\
+1\\
+-15\\
+-26\\
+\end{pmatrix},
+\begin{pmatrix}
+-1\\
+-3\\
+5\\
+18\\
+\end{pmatrix}
+\rangle
+= U
+\]
+Составим ОСЛУ из этих векторов:\\
+\[
+\begin{cases}
+4x_1 + x_2 - 9x_3 - 17x_4 = 0\\
+3x_1 - x_2 - 5x_3 - 4x_4 = 0\\
+7x_1 + x_2 - 15x_3 - 26x_4 = 0\\
+-x_1 - 3x_2 + 5x_3 + 18x_4 = 0\\
+\end{cases}
+\Leftrightarrow
+\begin{pmatrix}
+4 & 1 & -9 & -17\\
+3 & -1 & -5 & -4\\
+7 & 1 & -15 & -26\\
+-1 & -3 & 5 & 18\\
+\end{pmatrix}
+\begin{pmatrix}
+x_1\\
+x_2\\
+x_3\\
+x_4\\
+\end{pmatrix}
+=
+0
+\]
+Найдём ФСР:\\
+\\
+$
+\begin{pmatrix}
+\begin{tabular}{c c c c | c}
+4 & 1 & -9 & -17 & 0\\
+3 & -1 & -5 & -4 & 0\\
+7 & 1 & -15 & -26 & 0\\
+-1 & -3 & 5 & 18 & 0\\
+\end{tabular}
+\end{pmatrix}
+\rightsquigarrow
+\begin{pmatrix}
+\begin{tabular}{c c c c | c}
+0 & -11 & 11 & 55 & 0\\
+0 & -10 & 10 & 50 & 0\\
+0 & -20 & 20 & 100 & 0\\
+-1 & -3 & 5 & 18 & 0\\
+\end{tabular}
+\end{pmatrix}
+\rightsquigarrow
+\begin{pmatrix}
+\begin{tabular}{c c c c | c}
+0 & -1 & 1 & 5 & 0\\
+0 & -1 & 1 & 5 & 0\\
+0 & -1 & 1 & 5 & 0\\
+-1 & -3 & 5 & 18 & 0\\
+\end{tabular}
+\end{pmatrix}
+\rightsquigarrow
+\\\\\\
+\rightsquigarrow
+\begin{pmatrix}
+\begin{tabular}{c c c c | c}
+-1 & -3 & 5 & 18 & 0\\
+0 & -1 & 1 & 5 & 0\\
+0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0\\
+\end{tabular}
+\end{pmatrix}
+\rightsquigarrow
+\begin{pmatrix}
+\begin{tabular}{c c c c | c}
+1 & 3 & -5 & -18 & 0\\
+0 & 1 & -1 & -5 & 0\\
+0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0\\
+\end{tabular}
+\end{pmatrix}
+\rightsquigarrow
+\begin{pmatrix}
+\begin{tabular}{c c c c | c}
+1 & 0 & -2 & -3 & 0\\
+0 & 1 & -1 & -5 & 0\\
+0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0\\
+\end{tabular}
+\end{pmatrix}
+\Rightarrow
+\\\\\\
+\Rightarrow
+\left\{
+\begin{pmatrix}
+2x_3 + 3x_4\\
+x_3 + 5x_4\\
+x_3\\
+x_4\\
+\end{pmatrix}
+|\ 
+x_3, x_4 \in \mathbb{R}
+\right\}
+$
+\\\\\\
+ФСР:	
+$
+\begin{pmatrix}
+2\\
+1\\
+1\\
+0\\
+\end{pmatrix},
+\begin{pmatrix}
+3\\
+5\\
+0\\
+1\\
+\end{pmatrix}
+$
+\\\\
+Из ФСР по строкам составим ОСЛУ:\\
+\[
+\begin{cases}
+2x_1 + x_2 + x_3 = 0\\
+3x_1 + 5x_2 + x_4 = 0\\
+\end{cases}
+\]
+\\
+Всё, эта ОСЛУ - искомая.
+\section{№ 4.}
+$L_1 = 
+\langle
+\begin{pmatrix}
+4\\
+-1\\
+-14\\
+9\\
+\end{pmatrix},
+\begin{pmatrix}
+0\\
+1\\
+-4\\
+3\\
+\end{pmatrix},
+\begin{pmatrix}
+-6\\
+-4\\
+-11\\
+6\\
+\end{pmatrix},
+\begin{pmatrix}
+2\\
+2\\
+1\\
+0\\
+\end{pmatrix}
+\rangle$
+\\
+\\
+$L_2 = 
+\langle
+\begin{pmatrix}
+-2\\
+0\\
+-9\\
+6\\
+\end{pmatrix},
+\begin{pmatrix}
+8\\
+-3\\
+21\\
+-13\\
+\end{pmatrix},
+\begin{pmatrix}
+4\\
+-3\\
+3\\
+-1\\
+\end{pmatrix},
+\begin{pmatrix}
+10\\
+-6\\
+15\\
+-8\\
+\end{pmatrix}
+\rangle$\\\\
+$U = L_1 + L_2 =
+\langle
+a_1, a_2, a_3, a_4, b_1, b_2, b_3, b_4
+\rangle$\\
+Найдём базисы $L_1, L_2, U$:\\
+Запишем векторы в столбцы и будем выполнять элементарные преобразования строк, сохраняя линейные зависимости между столбцами.
+Запишем матрицу $(a_1\ a_2\ a_3\ a_4\ |\ b_1\ b_2\ b_3\ b_4)$. Таким образом мы стразу найдём базис $L_1$ и $U$:\\
+\\
+$
+\begin{pmatrix}
+\begin{tabular}{c c c c | c c c c}
+4 & 0 & -6 & 2 & -2 & 8 & 4 & 10\\
+-1 & 1 & -4 & 2 & 0 & -3 & -3 & -6\\
+-14 & -4 & -11 & 1 & -9 & 21 & 3 & 15\\
+9 & 3 & 6 & 0 & 6 & -13 & -1 & -8\\
+\end{tabular}
+\end{pmatrix}
+\rightsquigarrow
+\begin{pmatrix}
+\begin{tabular}{c c c c | c c c c}
+0 & 4 & -22 & 10 & -2 & -4 & -8 & -14\\
+-1 & 1 & -4 & 2 & 0 & -3 & -3 & -6\\
+0 & -18 & 45 & -27 & -9 & 63 & 45 & 99\\
+0 & 12 & -30 & 18 & 6 & -40 & -28 & -62\\
+\end{tabular}
+\end{pmatrix}
+\rightsquigarrow
+\\\\
+\rightsquigarrow
+\begin{pmatrix}
+\begin{tabular}{c c c c | c c c c}
+0 & 2 & -11 & 5 & -1 & -2 & -4 & -7\\
+-1 & 1 & -4 & 2 & 0 & -3 & -3 & -6\\
+0 & -6 & 15 & -9 & -3 & 21 & 15 & 33\\
+0 & 6 & -15 & 9 & 3 & -20 & -14 & -31\\
+\end{tabular}
+\end{pmatrix}
+\rightsquigarrow
+\begin{pmatrix}
+\begin{tabular}{c c c c | c c c c}
+0 & 2 & -11 & 5 & -1 & -2 & -4 & -7\\
+-1 & 1 & -4 & 2 & 0 & -3 & -3 & -6\\
+0 & 2 & -5 & 3 & 1 & -7 & -5 & -11\\
+0 & 0 & 0 & 0 & 0 & 1 & 1 & 2\\
+\end{tabular}
+\end{pmatrix}
+\rightsquigarrow
+\\\\
+\rightsquigarrow
+\begin{pmatrix}
+\begin{tabular}{c c c c | c c c c}
+0 & 0 & \underline{-6} & 2 & -2 & 5 & 1 & 4\\
+\underline{-1} & 1 & -4 & 2 & 0 & -3 & -3 & -6\\
+0 & \underline{2} & -5 & 3 & 1 & -7 & -5 & -11\\
+0 & 0 & 0 & 0 & 0 & \underline{1} & 1 & 2\\
+\end{tabular}
+\end{pmatrix}
+$\\
+\\
+Соответственно базис $L_1$: 
+$
+\begin{pmatrix}
+4\\
+-1\\
+-14\\
+9\\
+\end{pmatrix},
+\begin{pmatrix}
+0\\
+1\\
+-4\\
+3\\
+\end{pmatrix},
+\begin{pmatrix}
+-6\\
+-4\\
+-11\\
+6\\
+\end{pmatrix}
+$;\\
+базис $U$:
+$
+\begin{pmatrix}
+4\\
+-1\\
+-14\\
+9\\
+\end{pmatrix},
+\begin{pmatrix}
+0\\
+1\\
+-4\\
+3\\
+\end{pmatrix},
+\begin{pmatrix}
+-6\\
+-4\\
+-11\\
+6\\
+\end{pmatrix}
+\begin{pmatrix}
+8\\
+-3\\
+21\\
+-13\\
+\end{pmatrix}
+$;\\
+Найдём базис $L_2$: запишем векторы в матрицу по столбцам и будем выполнять элементарные преобразования строк, 
+сохраняя линейные зависимости между столбцами:\\
+\\
+$
+\begin{pmatrix}
+-2 & 8 & 4 & 10\\
+0 & -3 & -3 & -6\\
+-9 & 21 & 3 & 15\\
+6 & -13 & -1 & -8\\
+\end{pmatrix}
+\rightsquigarrow
+\begin{pmatrix}
+1 & -4 & -2 & -5\\
+0 & 1 & 1 & 2\\
+3 & -7 & -1 & -5\\
+6 & -13 & -1 & -8\\
+\end{pmatrix}
+\rightsquigarrow
+\begin{pmatrix}
+1 & 0 & 2 & 3\\
+0 & 1 & 1 & 2\\
+3 & -7 & -1 & -5\\
+0 & 1 & 1 & 2\\
+\end{pmatrix}
+\rightsquigarrow
+\begin{pmatrix}
+1 & 0 & 2 & 3\\
+0 & 1 & 1 & 2\\
+0 & -7 & -7 & -14\\
+0 & 0 & 0 & 0\\
+\end{pmatrix}
+\rightsquigarrow
+\\
+\rightsquigarrow
+\begin{pmatrix}
+\underline{1} & 0 & 2 & 3\\
+0 & \underline{1} & 1 & 2\\
+0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0\\
+\end{pmatrix}
+$\\
+\\
+Базис в $L_2$: 
+$
+\begin{pmatrix}
+-2\\
+0\\
+-9\\
+6\\
+\end{pmatrix},
+\begin{pmatrix}
+8\\
+-3\\
+21\\
+-13\\
+\end{pmatrix}
+$.\\
+\\
+Прежде чем искать базис $W = L_1 \cap L_2$ разберёмся с размерностями:\\
+1) $\dim{L_1} = 3$.\\
+2) $\dim{L_2} = 2$.\\
+3) $\dim{U} = 4$.\\
+4) $\dim{W} = \dim{L_1} + \dim{L_2} - \dim{U} = 3 + 2 - 4 = 1$.\\
+\\
+Теперь ищем базис $W = L_1 \cap L_2$.\\
+Рассмотрим некоторый вектор $v \in W$. Для такого вектора одновременно выполняется $v \in L_1$ и $v \in L_2$.\\
+$v \in L_1 \Leftrightarrow \lambda_1a_1 + \lambda_2a_2 + \lambda_3a_3 = v$ (векторы $a_1, a_2, a_3$ - базис в $L_1$);\\
+С другой стороны $v \in L_2 \Leftrightarrow \mu_1b_1 + \mu_2b_2 = v$ (векторы $b_1, b_2$ - базис в $L_2$).\\
+Значит $v \in W \Leftrightarrow \lambda_1a_1 + \lambda_2a_2 + \lambda_3a_3 = \mu_1b_1 + \mu_2b_2 \Leftrightarrow
+(a_1\ a_2\ a_3)
+\begin{pmatrix}
+\lambda_1\\
+\lambda_2\\
+\lambda_3\\
+\end{pmatrix}
+= 
+(b_1\ b_2)
+\begin{pmatrix}
+\mu_1\\
+\mu_2\\
+\end{pmatrix}
+\Leftrightarrow
+\\
+\Leftrightarrow
+(a_1\ a_2\ a_3\ |\ b_1\ b_2)$. Ищем ФСР этой ОСЛУ:\\
+\\
+$
+\begin{pmatrix}
+\begin{tabular}{c c c | c c}
+-4 & 0 & -6 & -2 & 8\\
+-1 & 1 & -4 & 0 & -3\\
+-14 & -4 & -11 & -9 & 21\\
+9 & 3 & 6 & 6 & -13\\
+\end{tabular}
+\end{pmatrix}
+\rightsquigarrow
+\begin{pmatrix}
+\begin{tabular}{c c c | c c}
+0 & 0 & -6 & -2 & 5\\
+-1 & 1 & -4 & 0 & -3\\
+0 & 2 & -5 & 1 & -7\\
+0 & 0 & 0 & 0 & 1\\
+\end{tabular}
+\end{pmatrix}
+\rightsquigarrow
+\begin{pmatrix}
+\begin{tabular}{c c c | c c}
+-1 & 1 & -4 & 0 & -3\\
+0 & 2 & -5 & 1 & -7\\
+0 & 0 & -6 & -2 & 5\\
+0 & 0 & 0 & 0 & 1\\
+\end{tabular}
+\end{pmatrix}
+\rightsquigarrow
+\\
+\rightsquigarrow
+\begin{pmatrix}
+\begin{tabular}{c c c | c c}
+-1 & 1 & -4 & 0 & 0\\
+0 & 2 & -5 & 1 & 0\\
+0 & 0 & -6 & -2 & 0\\
+0 & 0 & 0 & 0 & 1\\
+\end{tabular}
+\end{pmatrix}
+\rightsquigarrow
+\begin{pmatrix}
+\begin{tabular}{c c c | c c}
+1 & -1 & 4 & 0 & 0\\
+0 & 2 & -5 & 1 & 0\\
+0 & 0 & 3 & 1 & 0\\
+0 & 0 & 0 & 0 & 1\\
+\end{tabular}
+\end{pmatrix}
+\rightsquigarrow
+\begin{pmatrix}
+\begin{tabular}{c c c | c c}
+1 & -1 & 4 & 0 & 0\\
+0 & 2 & -8 & 0 & 0\\
+0 & 0 & 3 & 1 & 0\\
+0 & 0 & 0 & 0 & 1\\
+\end{tabular}
+\end{pmatrix}
+\rightsquigarrow
+\\
+\rightsquigarrow
+\begin{pmatrix}
+\begin{tabular}{c c c | c c}
+1 & -1 & 4 & 0 & 0\\
+0 & 1 & -4 & 0 & 0\\
+0 & 0 & 3 & 1 & 0\\
+0 & 0 & 0 & 0 & 1\\
+\end{tabular}
+\end{pmatrix}
+\rightsquigarrow
+\begin{pmatrix}
+\begin{tabular}{c c c | c c}
+1 & 0 & 0 & 0 & 0\\
+0 & 1 & -4 & 0 & 0\\
+0 & 0 & 1& 1/3 & 0\\
+0 & 0 & 0 & 0 & 1\\
+\end{tabular}
+\end{pmatrix}
+\rightsquigarrow
+\begin{pmatrix}
+\begin{tabular}{c c c | c c}
+1 & 0 & 0 & 0 & 0\\
+0 & 1 & 0 & 4/3 & 0\\
+0 & 0 & 1& 1/3 & 0\\
+0 & 0 & 0 & 0 & 1\\
+\end{tabular}
+\end{pmatrix}
+\Rightarrow\\
+\Rightarrow$
+ФСР:
+$
+\begin{pmatrix}
+0\\
+4\\
+1\\
+3\\
+0\\
+\end{pmatrix}$\\\\
+Мы получили порождающую базис $W$ ОСЛУ: $0a_1 + 4a_2 + a_3 = 3b_1 + 0b_2$. Теперь подставим векторы в ОСЛУ и 
+получим искомый базис:\\
+$
+4\cdot
+\begin{pmatrix}
+0\\
+1\\
+-4\\
+3\\
+\end{pmatrix}
++
+\begin{pmatrix}
+-6\\
+-4\\
+-11\\
+6\\
+\end{pmatrix}
+=
+3\cdot
+\begin{pmatrix}
+-2\\
+0\\
+-9\\
+6\\
+\end{pmatrix}
+\Leftrightarrow
+\begin{pmatrix}
+-6\\
+0\\
+-27\\
+18\\
+\end{pmatrix}
+=
+\begin{pmatrix}
+-6\\
+0\\
+-27\\
+18\\
+\end{pmatrix}
+\Rightarrow\\
+\Rightarrow
+\begin{pmatrix}
+-6\\
+0\\
+-27\\
+18\\
+\end{pmatrix}$
+- базис в $W$. (Базисный вектор кстатии один, значит размерность равна 1, и это соответствует
+нашим ожиданиям.)
+\end{document}
+
